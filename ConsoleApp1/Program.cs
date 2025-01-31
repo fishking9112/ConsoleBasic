@@ -15,9 +15,6 @@ namespace StringTest
     {
         static void Main(string[] args)
         {
-            int[5] ints;
-
-
             //string str1 = "Hello, World !";
             //string str2 = new string('h', 5);
 
