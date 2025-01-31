@@ -229,6 +229,7 @@ public class Snake
 
         Point nextPoint = new Point(Head.x, Head.y, Head.sym);
 
+        //방향에 따라 다음 갈곳의 위치가 달라진다.
         switch (dir)
         {
             case Direction.LEFT:
