@@ -2,11 +2,13 @@
 {
     internal class Program
     {
+        //인터페이스 생성
         public interface IUsable
         {
             void Use();
         }
 
+        //인터페이스를 사용한 클래스(Item) 생성
         public class Item : IUsable
         {
             public string Name { get; set; }
@@ -16,7 +18,7 @@
                 Console.WriteLine("아이템 {0} 을 사용했습니다." , Name);
             }
         }
-
+        //인터페이스를 사용한 클래스(Food) 생성
         public class Food : IUsable
         {
             public string Name { get; set; }
@@ -29,6 +31,7 @@
 
         public class Player
         {
+            //인터페이스를 사용한 Item , Food 사용
             public void UseItem(IUsable item)
             {
                 item.Use();
